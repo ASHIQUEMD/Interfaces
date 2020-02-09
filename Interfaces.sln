@@ -1,0 +1,567 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DynamicLoading-Part2", "DynamicLoading-Part2", "{1949A64A-44F5-4A57-952A-BB9BD86D36A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People.Service", "DynamicLoading\People.Service\People.Service.csproj", "{D470D522-357A-4BAB-87E4-D7490CEFD42C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleViewer", "DynamicLoading\PeopleViewer\PeopleViewer.csproj", "{2DD8AAD1-284B-47BA-89D0-58E5E7745C3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleViewer.Layered", "DynamicLoading\PeopleViewer.Layered\PeopleViewer.Layered.csproj", "{113C3648-8220-4227-8BC8-8003BFE5022A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleViewer.Test", "DynamicLoading\PeopleViewer.Test\PeopleViewer.Test.csproj", "{4C515105-7B54-4FD0-996D-C70EDB92D2D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Factory", "DynamicLoading\PersonRepository.Factory\PersonRepository.Factory.csproj", "{81494D39-346F-4BC2-A732-46558F59D9D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Interface", "DynamicLoading\PersonRepository.Interface\PersonRepository.Interface.csproj", "{74FB5712-50CC-45E6-B1CB-1BFA119B7D85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DynamicLoading-part1", "DynamicLoading-part1", "{849C81F1-2112-48B5-92C5-3644B821BA03}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People.Service", "DynamicLoading-part1\People.Service\People.Service.csproj", "{736460EA-2E22-4E92-BEB7-1B1D4979952C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleViewer", "DynamicLoading-part1\PeopleViewer\PeopleViewer.csproj", "{40D74183-AAA0-41BB-8DA8-798A37677EF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleViewer.Layered", "DynamicLoading-part1\PeopleViewer.Layered\PeopleViewer.Layered.csproj", "{BAF6031F-DF80-4C4C-BA25-E7EC0A8F049E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleViewer.Test", "DynamicLoading-part1\PeopleViewer.Test\PeopleViewer.Test.csproj", "{377B44D9-918D-4050-8FBF-F6B3C579C087}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Factory", "DynamicLoading-part1\PersonRepository.Factory\PersonRepository.Factory.csproj", "{D0569297-1B08-4FE4-A2F5-786138FF43E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Fake", "DynamicLoading-part1\PersonRepository.Fake\PersonRepository.Fake.csproj", "{3F8C564A-0093-44B4-8C71-91E45E387891}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Interface", "DynamicLoading-part1\PersonRepository.Interface\PersonRepository.Interface.csproj", "{90A05EF4-64CC-4C0A-8962-CDC98FC733D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RepositoriesForBin", "RepositoriesForBin", "{82AE6DBB-8294-4586-B3ED-2F9D51601659}"
+	ProjectSection(SolutionItems) = preProject
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Data.Sqlite.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.Data.Sqlite.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Data.Sqlite.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.Data.Sqlite.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.Abstractions.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.Abstractions.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.Abstractions.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.Abstractions.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.Relational.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.Relational.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.Relational.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.Relational.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.Sqlite.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.Sqlite.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.Sqlite.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.Sqlite.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.EntityFrameworkCore.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Caching.Abstractions.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Caching.Abstractions.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Caching.Abstractions.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Caching.Abstractions.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Caching.Memory.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Caching.Memory.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Caching.Memory.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Caching.Memory.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Configuration.Abstractions.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Configuration.Abstractions.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Configuration.Abstractions.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Configuration.Abstractions.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Configuration.Binder.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Configuration.Binder.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Configuration.Binder.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Configuration.Binder.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Configuration.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Configuration.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Configuration.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Configuration.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.DependencyInjection.Abstractions.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.DependencyInjection.Abstractions.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.DependencyInjection.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.DependencyInjection.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.DependencyInjection.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.DependencyInjection.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Logging.Abstractions.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Logging.Abstractions.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Logging.Abstractions.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Logging.Abstractions.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Logging.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Logging.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Logging.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Logging.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Options.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Options.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Options.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Options.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Primitives.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Primitives.dll
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Primitives.xml = DynamicLoading-part1\RepositoriesForBin\Microsoft.Extensions.Primitives.xml
+		DynamicLoading-part1\RepositoriesForBin\Microsoft.Win32.Primitives.dll = DynamicLoading-part1\RepositoriesForBin\Microsoft.Win32.Primitives.dll
+		DynamicLoading-part1\RepositoriesForBin\netstandard.dll = DynamicLoading-part1\RepositoriesForBin\netstandard.dll
+		DynamicLoading-part1\RepositoriesForBin\Newtonsoft.Json.dll = DynamicLoading-part1\RepositoriesForBin\Newtonsoft.Json.dll
+		DynamicLoading-part1\RepositoriesForBin\Newtonsoft.Json.xml = DynamicLoading-part1\RepositoriesForBin\Newtonsoft.Json.xml
+		DynamicLoading-part1\RepositoriesForBin\People.db = DynamicLoading-part1\RepositoriesForBin\People.db
+		DynamicLoading-part1\RepositoriesForBin\People.txt = DynamicLoading-part1\RepositoriesForBin\People.txt
+		DynamicLoading-part1\RepositoriesForBin\PersonRepository.CSV.dll = DynamicLoading-part1\RepositoriesForBin\PersonRepository.CSV.dll
+		DynamicLoading-part1\RepositoriesForBin\PersonRepository.CSV.pdb = DynamicLoading-part1\RepositoriesForBin\PersonRepository.CSV.pdb
+		DynamicLoading-part1\RepositoriesForBin\PersonRepository.Service.dll = DynamicLoading-part1\RepositoriesForBin\PersonRepository.Service.dll
+		DynamicLoading-part1\RepositoriesForBin\PersonRepository.Service.pdb = DynamicLoading-part1\RepositoriesForBin\PersonRepository.Service.pdb
+		DynamicLoading-part1\RepositoriesForBin\PersonRepository.SQL.dll = DynamicLoading-part1\RepositoriesForBin\PersonRepository.SQL.dll
+		DynamicLoading-part1\RepositoriesForBin\PersonRepository.SQL.pdb = DynamicLoading-part1\RepositoriesForBin\PersonRepository.SQL.pdb
+		DynamicLoading-part1\RepositoriesForBin\Remotion.Linq.dll = DynamicLoading-part1\RepositoriesForBin\Remotion.Linq.dll
+		DynamicLoading-part1\RepositoriesForBin\Remotion.Linq.xml = DynamicLoading-part1\RepositoriesForBin\Remotion.Linq.xml
+		DynamicLoading-part1\RepositoriesForBin\SQLitePCLRaw.batteries_green.dll = DynamicLoading-part1\RepositoriesForBin\SQLitePCLRaw.batteries_green.dll
+		DynamicLoading-part1\RepositoriesForBin\SQLitePCLRaw.batteries_v2.dll = DynamicLoading-part1\RepositoriesForBin\SQLitePCLRaw.batteries_v2.dll
+		DynamicLoading-part1\RepositoriesForBin\SQLitePCLRaw.core.dll = DynamicLoading-part1\RepositoriesForBin\SQLitePCLRaw.core.dll
+		DynamicLoading-part1\RepositoriesForBin\SQLitePCLRaw.provider.e_sqlite3.dll = DynamicLoading-part1\RepositoriesForBin\SQLitePCLRaw.provider.e_sqlite3.dll
+		DynamicLoading-part1\RepositoriesForBin\System.AppContext.dll = DynamicLoading-part1\RepositoriesForBin\System.AppContext.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Buffers.dll = DynamicLoading-part1\RepositoriesForBin\System.Buffers.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Buffers.xml = DynamicLoading-part1\RepositoriesForBin\System.Buffers.xml
+		DynamicLoading-part1\RepositoriesForBin\System.Collections.Concurrent.dll = DynamicLoading-part1\RepositoriesForBin\System.Collections.Concurrent.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Collections.dll = DynamicLoading-part1\RepositoriesForBin\System.Collections.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Collections.Immutable.dll = DynamicLoading-part1\RepositoriesForBin\System.Collections.Immutable.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Collections.Immutable.xml = DynamicLoading-part1\RepositoriesForBin\System.Collections.Immutable.xml
+		DynamicLoading-part1\RepositoriesForBin\System.Collections.NonGeneric.dll = DynamicLoading-part1\RepositoriesForBin\System.Collections.NonGeneric.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Collections.Specialized.dll = DynamicLoading-part1\RepositoriesForBin\System.Collections.Specialized.dll
+		DynamicLoading-part1\RepositoriesForBin\System.ComponentModel.Annotations.dll = DynamicLoading-part1\RepositoriesForBin\System.ComponentModel.Annotations.dll
+		DynamicLoading-part1\RepositoriesForBin\System.ComponentModel.dll = DynamicLoading-part1\RepositoriesForBin\System.ComponentModel.dll
+		DynamicLoading-part1\RepositoriesForBin\System.ComponentModel.EventBasedAsync.dll = DynamicLoading-part1\RepositoriesForBin\System.ComponentModel.EventBasedAsync.dll
+		DynamicLoading-part1\RepositoriesForBin\System.ComponentModel.Primitives.dll = DynamicLoading-part1\RepositoriesForBin\System.ComponentModel.Primitives.dll
+		DynamicLoading-part1\RepositoriesForBin\System.ComponentModel.TypeConverter.dll = DynamicLoading-part1\RepositoriesForBin\System.ComponentModel.TypeConverter.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Configuration.ConfigurationManager.dll = DynamicLoading-part1\RepositoriesForBin\System.Configuration.ConfigurationManager.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Console.dll = DynamicLoading-part1\RepositoriesForBin\System.Console.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Data.Common.dll = DynamicLoading-part1\RepositoriesForBin\System.Data.Common.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.Contracts.dll = DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.Contracts.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.Debug.dll = DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.Debug.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.DiagnosticSource.dll = DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.DiagnosticSource.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.DiagnosticSource.xml = DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.DiagnosticSource.xml
+		DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.FileVersionInfo.dll = DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.FileVersionInfo.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.Process.dll = DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.Process.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.StackTrace.dll = DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.StackTrace.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.TextWriterTraceListener.dll = DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.TextWriterTraceListener.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.Tools.dll = DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.Tools.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.TraceSource.dll = DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.TraceSource.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.Tracing.dll = DynamicLoading-part1\RepositoriesForBin\System.Diagnostics.Tracing.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Drawing.Primitives.dll = DynamicLoading-part1\RepositoriesForBin\System.Drawing.Primitives.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Dynamic.Runtime.dll = DynamicLoading-part1\RepositoriesForBin\System.Dynamic.Runtime.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Globalization.Calendars.dll = DynamicLoading-part1\RepositoriesForBin\System.Globalization.Calendars.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Globalization.dll = DynamicLoading-part1\RepositoriesForBin\System.Globalization.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Globalization.Extensions.dll = DynamicLoading-part1\RepositoriesForBin\System.Globalization.Extensions.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Interactive.Async.dll = DynamicLoading-part1\RepositoriesForBin\System.Interactive.Async.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Interactive.Async.xml = DynamicLoading-part1\RepositoriesForBin\System.Interactive.Async.xml
+		DynamicLoading-part1\RepositoriesForBin\System.IO.Compression.dll = DynamicLoading-part1\RepositoriesForBin\System.IO.Compression.dll
+		DynamicLoading-part1\RepositoriesForBin\System.IO.Compression.ZipFile.dll = DynamicLoading-part1\RepositoriesForBin\System.IO.Compression.ZipFile.dll
+		DynamicLoading-part1\RepositoriesForBin\System.IO.dll = DynamicLoading-part1\RepositoriesForBin\System.IO.dll
+		DynamicLoading-part1\RepositoriesForBin\System.IO.FileSystem.dll = DynamicLoading-part1\RepositoriesForBin\System.IO.FileSystem.dll
+		DynamicLoading-part1\RepositoriesForBin\System.IO.FileSystem.DriveInfo.dll = DynamicLoading-part1\RepositoriesForBin\System.IO.FileSystem.DriveInfo.dll
+		DynamicLoading-part1\RepositoriesForBin\System.IO.FileSystem.Primitives.dll = DynamicLoading-part1\RepositoriesForBin\System.IO.FileSystem.Primitives.dll
+		DynamicLoading-part1\RepositoriesForBin\System.IO.FileSystem.Watcher.dll = DynamicLoading-part1\RepositoriesForBin\System.IO.FileSystem.Watcher.dll
+		DynamicLoading-part1\RepositoriesForBin\System.IO.IsolatedStorage.dll = DynamicLoading-part1\RepositoriesForBin\System.IO.IsolatedStorage.dll
+		DynamicLoading-part1\RepositoriesForBin\System.IO.MemoryMappedFiles.dll = DynamicLoading-part1\RepositoriesForBin\System.IO.MemoryMappedFiles.dll
+		DynamicLoading-part1\RepositoriesForBin\System.IO.Pipes.dll = DynamicLoading-part1\RepositoriesForBin\System.IO.Pipes.dll
+		DynamicLoading-part1\RepositoriesForBin\System.IO.UnmanagedMemoryStream.dll = DynamicLoading-part1\RepositoriesForBin\System.IO.UnmanagedMemoryStream.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Linq.dll = DynamicLoading-part1\RepositoriesForBin\System.Linq.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Linq.Expressions.dll = DynamicLoading-part1\RepositoriesForBin\System.Linq.Expressions.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Linq.Parallel.dll = DynamicLoading-part1\RepositoriesForBin\System.Linq.Parallel.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Linq.Queryable.dll = DynamicLoading-part1\RepositoriesForBin\System.Linq.Queryable.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Memory.dll = DynamicLoading-part1\RepositoriesForBin\System.Memory.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Memory.xml = DynamicLoading-part1\RepositoriesForBin\System.Memory.xml
+		DynamicLoading-part1\RepositoriesForBin\System.Net.Http.dll = DynamicLoading-part1\RepositoriesForBin\System.Net.Http.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Net.NameResolution.dll = DynamicLoading-part1\RepositoriesForBin\System.Net.NameResolution.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Net.NetworkInformation.dll = DynamicLoading-part1\RepositoriesForBin\System.Net.NetworkInformation.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Net.Ping.dll = DynamicLoading-part1\RepositoriesForBin\System.Net.Ping.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Net.Primitives.dll = DynamicLoading-part1\RepositoriesForBin\System.Net.Primitives.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Net.Requests.dll = DynamicLoading-part1\RepositoriesForBin\System.Net.Requests.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Net.Security.dll = DynamicLoading-part1\RepositoriesForBin\System.Net.Security.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Net.Sockets.dll = DynamicLoading-part1\RepositoriesForBin\System.Net.Sockets.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Net.WebHeaderCollection.dll = DynamicLoading-part1\RepositoriesForBin\System.Net.WebHeaderCollection.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Net.WebSockets.Client.dll = DynamicLoading-part1\RepositoriesForBin\System.Net.WebSockets.Client.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Net.WebSockets.dll = DynamicLoading-part1\RepositoriesForBin\System.Net.WebSockets.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Numerics.Vectors.dll = DynamicLoading-part1\RepositoriesForBin\System.Numerics.Vectors.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Numerics.Vectors.xml = DynamicLoading-part1\RepositoriesForBin\System.Numerics.Vectors.xml
+		DynamicLoading-part1\RepositoriesForBin\System.ObjectModel.dll = DynamicLoading-part1\RepositoriesForBin\System.ObjectModel.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Reflection.dll = DynamicLoading-part1\RepositoriesForBin\System.Reflection.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Reflection.Extensions.dll = DynamicLoading-part1\RepositoriesForBin\System.Reflection.Extensions.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Reflection.Primitives.dll = DynamicLoading-part1\RepositoriesForBin\System.Reflection.Primitives.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Resources.Reader.dll = DynamicLoading-part1\RepositoriesForBin\System.Resources.Reader.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Resources.ResourceManager.dll = DynamicLoading-part1\RepositoriesForBin\System.Resources.ResourceManager.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Resources.Writer.dll = DynamicLoading-part1\RepositoriesForBin\System.Resources.Writer.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Runtime.CompilerServices.Unsafe.dll = DynamicLoading-part1\RepositoriesForBin\System.Runtime.CompilerServices.Unsafe.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Runtime.CompilerServices.Unsafe.xml = DynamicLoading-part1\RepositoriesForBin\System.Runtime.CompilerServices.Unsafe.xml
+		DynamicLoading-part1\RepositoriesForBin\System.Runtime.CompilerServices.VisualC.dll = DynamicLoading-part1\RepositoriesForBin\System.Runtime.CompilerServices.VisualC.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Runtime.dll = DynamicLoading-part1\RepositoriesForBin\System.Runtime.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Runtime.Extensions.dll = DynamicLoading-part1\RepositoriesForBin\System.Runtime.Extensions.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Runtime.Handles.dll = DynamicLoading-part1\RepositoriesForBin\System.Runtime.Handles.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Runtime.InteropServices.dll = DynamicLoading-part1\RepositoriesForBin\System.Runtime.InteropServices.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Runtime.InteropServices.RuntimeInformation.dll = DynamicLoading-part1\RepositoriesForBin\System.Runtime.InteropServices.RuntimeInformation.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Runtime.Numerics.dll = DynamicLoading-part1\RepositoriesForBin\System.Runtime.Numerics.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Runtime.Serialization.Formatters.dll = DynamicLoading-part1\RepositoriesForBin\System.Runtime.Serialization.Formatters.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Runtime.Serialization.Json.dll = DynamicLoading-part1\RepositoriesForBin\System.Runtime.Serialization.Json.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Runtime.Serialization.Primitives.dll = DynamicLoading-part1\RepositoriesForBin\System.Runtime.Serialization.Primitives.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Runtime.Serialization.Xml.dll = DynamicLoading-part1\RepositoriesForBin\System.Runtime.Serialization.Xml.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Security.AccessControl.dll = DynamicLoading-part1\RepositoriesForBin\System.Security.AccessControl.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Security.Claims.dll = DynamicLoading-part1\RepositoriesForBin\System.Security.Claims.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Security.Cryptography.Algorithms.dll = DynamicLoading-part1\RepositoriesForBin\System.Security.Cryptography.Algorithms.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Security.Cryptography.Csp.dll = DynamicLoading-part1\RepositoriesForBin\System.Security.Cryptography.Csp.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Security.Cryptography.Encoding.dll = DynamicLoading-part1\RepositoriesForBin\System.Security.Cryptography.Encoding.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Security.Cryptography.Primitives.dll = DynamicLoading-part1\RepositoriesForBin\System.Security.Cryptography.Primitives.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Security.Cryptography.X509Certificates.dll = DynamicLoading-part1\RepositoriesForBin\System.Security.Cryptography.X509Certificates.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Security.Permissions.dll = DynamicLoading-part1\RepositoriesForBin\System.Security.Permissions.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Security.Principal.dll = DynamicLoading-part1\RepositoriesForBin\System.Security.Principal.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Security.Principal.Windows.dll = DynamicLoading-part1\RepositoriesForBin\System.Security.Principal.Windows.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Security.SecureString.dll = DynamicLoading-part1\RepositoriesForBin\System.Security.SecureString.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Text.Encoding.dll = DynamicLoading-part1\RepositoriesForBin\System.Text.Encoding.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Text.Encoding.Extensions.dll = DynamicLoading-part1\RepositoriesForBin\System.Text.Encoding.Extensions.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Text.RegularExpressions.dll = DynamicLoading-part1\RepositoriesForBin\System.Text.RegularExpressions.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Threading.dll = DynamicLoading-part1\RepositoriesForBin\System.Threading.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Threading.Overlapped.dll = DynamicLoading-part1\RepositoriesForBin\System.Threading.Overlapped.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Threading.Tasks.dll = DynamicLoading-part1\RepositoriesForBin\System.Threading.Tasks.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Threading.Tasks.Parallel.dll = DynamicLoading-part1\RepositoriesForBin\System.Threading.Tasks.Parallel.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Threading.Thread.dll = DynamicLoading-part1\RepositoriesForBin\System.Threading.Thread.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Threading.ThreadPool.dll = DynamicLoading-part1\RepositoriesForBin\System.Threading.ThreadPool.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Threading.Timer.dll = DynamicLoading-part1\RepositoriesForBin\System.Threading.Timer.dll
+		DynamicLoading-part1\RepositoriesForBin\System.ValueTuple.dll = DynamicLoading-part1\RepositoriesForBin\System.ValueTuple.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Xml.ReaderWriter.dll = DynamicLoading-part1\RepositoriesForBin\System.Xml.ReaderWriter.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Xml.XDocument.dll = DynamicLoading-part1\RepositoriesForBin\System.Xml.XDocument.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Xml.XmlDocument.dll = DynamicLoading-part1\RepositoriesForBin\System.Xml.XmlDocument.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Xml.XmlSerializer.dll = DynamicLoading-part1\RepositoriesForBin\System.Xml.XmlSerializer.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Xml.XPath.dll = DynamicLoading-part1\RepositoriesForBin\System.Xml.XPath.dll
+		DynamicLoading-part1\RepositoriesForBin\System.Xml.XPath.XDocument.dll = DynamicLoading-part1\RepositoriesForBin\System.Xml.XPath.XDocument.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "x64", "x64", "{7E5786E7-6314-4F8C-8506-EC9B64FF63F7}"
+	ProjectSection(SolutionItems) = preProject
+		DynamicLoading-part1\RepositoriesForBin\x64\e_sqlite3.dll = DynamicLoading-part1\RepositoriesForBin\x64\e_sqlite3.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "x86", "x86", "{7543AC72-9EF2-499B-B1D8-78A2DF5D3F55}"
+	ProjectSection(SolutionItems) = preProject
+		DynamicLoading-part1\RepositoriesForBin\x86\e_sqlite3.dll = DynamicLoading-part1\RepositoriesForBin\x86\e_sqlite3.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExplicitImplementation", "ExplicitImplementation", "{554171EA-894B-429E-8EF6-F64DD3C9E2F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OddNumbers", "ExplicitImplementation\OddNumbers\OddNumbers.csproj", "{827A3A2D-3EFB-4102-A8E5-E886A0CA16E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensibility-part1", "Extensibility-part1", "{79C0EDBC-CF12-4FC1-927A-243B52C3E273}"
+	ProjectSection(SolutionItems) = preProject
+		Extensibility-part1\PersonRepository.Interface\PersonRepository.Interface.csproj = Extensibility-part1\PersonRepository.Interface\PersonRepository.Interface.csproj
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People.Service", "Extensibility-part1\People.Service\People.Service.csproj", "{80711D02-8616-4AB0-AB83-FB45A453B5FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleViewer", "Extensibility-part1\PeopleViewer\PeopleViewer.csproj", "{B09ED0A5-BD38-4AA1-BF39-2F734D5B5EEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.CSV", "Extensibility-part1\PersonRepository.CSV\PersonRepository.CSV.csproj", "{61DD15B7-19B2-44FC-9955-46C92D7D3E89}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Factory", "Extensibility-part1\PersonRepository.Factory\PersonRepository.Factory.csproj", "{2C7AE785-D630-4C5C-B8CB-A2335D5AE563}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Service", "Extensibility-part1\PersonRepository.Service\PersonRepository.Service.csproj", "{B872C3F1-B22B-4B14-9843-2C6F73A68FE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.SQL", "Extensibility-part1\PersonRepository.SQL\PersonRepository.SQL.csproj", "{5D4C20A2-6320-4BFC-B009-A42DD7C5473C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensibility-par2", "Extensibility-par2", "{AA148A84-3755-4B6E-8AC7-35D1F2AFA601}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People.Service", "Extensibility\People.Service\People.Service.csproj", "{83DB9A87-48EC-4404-B0A2-B48C6B7F5423}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleViewer", "Extensibility\PeopleViewer\PeopleViewer.csproj", "{C32B2C43-743D-4686-BE2D-16D30A1288BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.CSV", "Extensibility\PersonRepository.CSV\PersonRepository.CSV.csproj", "{77A19712-C579-409E-8D50-D5444E355477}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Factory", "Extensibility\PersonRepository.Factory\PersonRepository.Factory.csproj", "{E1B7D401-DB05-4007-B01B-DE6AF528A067}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Interface", "Extensibility\PersonRepository.Interface\PersonRepository.Interface.csproj", "{5882F3D3-F094-451F-B523-83BAC3128E9F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Service", "Extensibility\PersonRepository.Service\PersonRepository.Service.csproj", "{ABF4F007-BB0C-45F2-8C73-38F313961757}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.SQL", "Extensibility\PersonRepository.SQL\PersonRepository.SQL.csproj", "{21AF2F46-FD05-484E-BE0E-7CAB0DE199F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FutureProofing", "FutureProofing", "{62D064D0-9836-454F-A4F4-1E15355B7336}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "FutureProofing\Common\Common.csproj", "{034FB326-5DD2-456D-AFE2-10C2C34AF12C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People.Library", "FutureProofing\People.Library\People.Library.csproj", "{C917624F-5ADA-4FA0-9DDA-6C6772757D03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleViewer", "FutureProofing\PeopleViewer\PeopleViewer.csproj", "{3EF31E9A-3EE0-4100-94CA-01D4D48C051C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{948E7909-C8EB-4F03-A74E-64F1CAB90CA5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{32ED3339-9D72-4418-B586-F2D2A102EA10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InterfaceSegregationPrinciple", "InterfaceSegregationPrinciple", "{803300FF-9E50-4715-A49B-D93BDEE47D34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People.Service", "InterfaceSegregationPrinciple\People.Service\People.Service.csproj", "{FDE984C4-6A35-4ABA-9EF7-5C5CA0BEE8B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleViewer", "InterfaceSegregationPrinciple\PeopleViewer\PeopleViewer.csproj", "{75F12E56-78B6-4B0A-87A2-BBFD0A34037B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.CSV", "InterfaceSegregationPrinciple\PersonRepository.CSV\PersonRepository.CSV.csproj", "{C13A5933-1634-46B1-B8DF-0C56C06A7E40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Factory", "InterfaceSegregationPrinciple\PersonRepository.Factory\PersonRepository.Factory.csproj", "{692B1865-05F6-415A-96C9-E0012587F2A6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Interface", "InterfaceSegregationPrinciple\PersonRepository.Interface\PersonRepository.Interface.csproj", "{E02C5B3C-6C7D-47F7-B51B-915992229E77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Service", "InterfaceSegregationPrinciple\PersonRepository.Service\PersonRepository.Service.csproj", "{8C9A4034-C3CC-4421-AE95-0B9E08B3C9B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.SQL", "InterfaceSegregationPrinciple\PersonRepository.SQL\PersonRepository.SQL.csproj", "{1C9F393C-5AE6-40D6-BC20-FB4BE5D8D02A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LooseCoupling", "LooseCoupling", "{7D7283B0-1CEF-45EB-877A-20CC1BF0EC80}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "LooseCoupling\Common\Common.csproj", "{C7E77AD9-EAB0-4AD0-ACFF-11CEB385F412}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People.Service", "LooseCoupling\People.Service\People.Service.csproj", "{64544E68-2E34-4A34-B06D-798A67EE4F88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleViewer", "LooseCoupling\PeopleViewer\PeopleViewer.csproj", "{E3FC00AA-A9E7-4E6F-9DDC-5E7C1D21E53A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleViewer.Ninject", "LooseCoupling\PeopleViewer.Ninject\PeopleViewer.Ninject.csproj", "{A8F28521-413D-4E59-82AD-24C6D2B1DA4B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleViewer.Presentation", "LooseCoupling\PeopleViewer.Presentation\PeopleViewer.Presentation.csproj", "{B9AD5EE0-9DF2-4548-B7AF-CF7E4605B443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleViewer.Presentation.Tests", "LooseCoupling\PeopleViewer.Presentation.Tests\PeopleViewer.Presentation.Tests.csproj", "{8BB096F4-1DB0-4038-BA69-A4F75406D336}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Caching", "LooseCoupling\PersonRepository.Caching\PersonRepository.Caching.csproj", "{D6269622-7300-40FA-8740-0619E4D408A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.CSV", "LooseCoupling\PersonRepository.CSV\PersonRepository.CSV.csproj", "{E5C79760-C366-4935-B4BC-51D4336630CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRepository.Service", "LooseCoupling\PersonRepository.Service\PersonRepository.Service.csproj", "{6FA11EB1-1AA4-4137-9957-CA9DE6D27EF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Polygons", "Polygons", "{49C5A2AA-DBAF-43F2-BE83-136FF3F52A42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polygons", "Polygons\Polygons\Polygons.csproj", "{624EED93-68AA-4422-A6BD-512566205EA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polygons.Library", "Polygons\Polygons.Library\Polygons.Library.csproj", "{54744142-A369-4240-9222-40DABCF622EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D470D522-357A-4BAB-87E4-D7490CEFD42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D470D522-357A-4BAB-87E4-D7490CEFD42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D470D522-357A-4BAB-87E4-D7490CEFD42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D470D522-357A-4BAB-87E4-D7490CEFD42C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DD8AAD1-284B-47BA-89D0-58E5E7745C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD8AAD1-284B-47BA-89D0-58E5E7745C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD8AAD1-284B-47BA-89D0-58E5E7745C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD8AAD1-284B-47BA-89D0-58E5E7745C3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{113C3648-8220-4227-8BC8-8003BFE5022A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{113C3648-8220-4227-8BC8-8003BFE5022A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{113C3648-8220-4227-8BC8-8003BFE5022A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{113C3648-8220-4227-8BC8-8003BFE5022A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C515105-7B54-4FD0-996D-C70EDB92D2D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C515105-7B54-4FD0-996D-C70EDB92D2D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C515105-7B54-4FD0-996D-C70EDB92D2D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C515105-7B54-4FD0-996D-C70EDB92D2D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81494D39-346F-4BC2-A732-46558F59D9D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81494D39-346F-4BC2-A732-46558F59D9D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81494D39-346F-4BC2-A732-46558F59D9D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81494D39-346F-4BC2-A732-46558F59D9D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FB5712-50CC-45E6-B1CB-1BFA119B7D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FB5712-50CC-45E6-B1CB-1BFA119B7D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FB5712-50CC-45E6-B1CB-1BFA119B7D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FB5712-50CC-45E6-B1CB-1BFA119B7D85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{736460EA-2E22-4E92-BEB7-1B1D4979952C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736460EA-2E22-4E92-BEB7-1B1D4979952C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736460EA-2E22-4E92-BEB7-1B1D4979952C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736460EA-2E22-4E92-BEB7-1B1D4979952C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D74183-AAA0-41BB-8DA8-798A37677EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D74183-AAA0-41BB-8DA8-798A37677EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D74183-AAA0-41BB-8DA8-798A37677EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D74183-AAA0-41BB-8DA8-798A37677EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAF6031F-DF80-4C4C-BA25-E7EC0A8F049E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAF6031F-DF80-4C4C-BA25-E7EC0A8F049E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAF6031F-DF80-4C4C-BA25-E7EC0A8F049E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAF6031F-DF80-4C4C-BA25-E7EC0A8F049E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{377B44D9-918D-4050-8FBF-F6B3C579C087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377B44D9-918D-4050-8FBF-F6B3C579C087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377B44D9-918D-4050-8FBF-F6B3C579C087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377B44D9-918D-4050-8FBF-F6B3C579C087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0569297-1B08-4FE4-A2F5-786138FF43E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0569297-1B08-4FE4-A2F5-786138FF43E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0569297-1B08-4FE4-A2F5-786138FF43E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0569297-1B08-4FE4-A2F5-786138FF43E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F8C564A-0093-44B4-8C71-91E45E387891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8C564A-0093-44B4-8C71-91E45E387891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8C564A-0093-44B4-8C71-91E45E387891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8C564A-0093-44B4-8C71-91E45E387891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90A05EF4-64CC-4C0A-8962-CDC98FC733D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90A05EF4-64CC-4C0A-8962-CDC98FC733D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90A05EF4-64CC-4C0A-8962-CDC98FC733D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90A05EF4-64CC-4C0A-8962-CDC98FC733D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{827A3A2D-3EFB-4102-A8E5-E886A0CA16E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{827A3A2D-3EFB-4102-A8E5-E886A0CA16E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{827A3A2D-3EFB-4102-A8E5-E886A0CA16E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{827A3A2D-3EFB-4102-A8E5-E886A0CA16E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80711D02-8616-4AB0-AB83-FB45A453B5FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80711D02-8616-4AB0-AB83-FB45A453B5FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80711D02-8616-4AB0-AB83-FB45A453B5FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80711D02-8616-4AB0-AB83-FB45A453B5FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09ED0A5-BD38-4AA1-BF39-2F734D5B5EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09ED0A5-BD38-4AA1-BF39-2F734D5B5EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09ED0A5-BD38-4AA1-BF39-2F734D5B5EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09ED0A5-BD38-4AA1-BF39-2F734D5B5EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61DD15B7-19B2-44FC-9955-46C92D7D3E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61DD15B7-19B2-44FC-9955-46C92D7D3E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61DD15B7-19B2-44FC-9955-46C92D7D3E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61DD15B7-19B2-44FC-9955-46C92D7D3E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C7AE785-D630-4C5C-B8CB-A2335D5AE563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C7AE785-D630-4C5C-B8CB-A2335D5AE563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C7AE785-D630-4C5C-B8CB-A2335D5AE563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C7AE785-D630-4C5C-B8CB-A2335D5AE563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B872C3F1-B22B-4B14-9843-2C6F73A68FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B872C3F1-B22B-4B14-9843-2C6F73A68FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B872C3F1-B22B-4B14-9843-2C6F73A68FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B872C3F1-B22B-4B14-9843-2C6F73A68FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D4C20A2-6320-4BFC-B009-A42DD7C5473C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D4C20A2-6320-4BFC-B009-A42DD7C5473C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D4C20A2-6320-4BFC-B009-A42DD7C5473C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D4C20A2-6320-4BFC-B009-A42DD7C5473C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83DB9A87-48EC-4404-B0A2-B48C6B7F5423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83DB9A87-48EC-4404-B0A2-B48C6B7F5423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83DB9A87-48EC-4404-B0A2-B48C6B7F5423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83DB9A87-48EC-4404-B0A2-B48C6B7F5423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C32B2C43-743D-4686-BE2D-16D30A1288BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C32B2C43-743D-4686-BE2D-16D30A1288BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C32B2C43-743D-4686-BE2D-16D30A1288BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C32B2C43-743D-4686-BE2D-16D30A1288BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A19712-C579-409E-8D50-D5444E355477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A19712-C579-409E-8D50-D5444E355477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A19712-C579-409E-8D50-D5444E355477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A19712-C579-409E-8D50-D5444E355477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1B7D401-DB05-4007-B01B-DE6AF528A067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1B7D401-DB05-4007-B01B-DE6AF528A067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1B7D401-DB05-4007-B01B-DE6AF528A067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1B7D401-DB05-4007-B01B-DE6AF528A067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5882F3D3-F094-451F-B523-83BAC3128E9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5882F3D3-F094-451F-B523-83BAC3128E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5882F3D3-F094-451F-B523-83BAC3128E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5882F3D3-F094-451F-B523-83BAC3128E9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABF4F007-BB0C-45F2-8C73-38F313961757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF4F007-BB0C-45F2-8C73-38F313961757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF4F007-BB0C-45F2-8C73-38F313961757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF4F007-BB0C-45F2-8C73-38F313961757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21AF2F46-FD05-484E-BE0E-7CAB0DE199F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21AF2F46-FD05-484E-BE0E-7CAB0DE199F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21AF2F46-FD05-484E-BE0E-7CAB0DE199F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21AF2F46-FD05-484E-BE0E-7CAB0DE199F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{034FB326-5DD2-456D-AFE2-10C2C34AF12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{034FB326-5DD2-456D-AFE2-10C2C34AF12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{034FB326-5DD2-456D-AFE2-10C2C34AF12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{034FB326-5DD2-456D-AFE2-10C2C34AF12C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C917624F-5ADA-4FA0-9DDA-6C6772757D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C917624F-5ADA-4FA0-9DDA-6C6772757D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C917624F-5ADA-4FA0-9DDA-6C6772757D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C917624F-5ADA-4FA0-9DDA-6C6772757D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EF31E9A-3EE0-4100-94CA-01D4D48C051C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EF31E9A-3EE0-4100-94CA-01D4D48C051C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EF31E9A-3EE0-4100-94CA-01D4D48C051C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EF31E9A-3EE0-4100-94CA-01D4D48C051C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32ED3339-9D72-4418-B586-F2D2A102EA10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32ED3339-9D72-4418-B586-F2D2A102EA10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32ED3339-9D72-4418-B586-F2D2A102EA10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32ED3339-9D72-4418-B586-F2D2A102EA10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDE984C4-6A35-4ABA-9EF7-5C5CA0BEE8B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE984C4-6A35-4ABA-9EF7-5C5CA0BEE8B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE984C4-6A35-4ABA-9EF7-5C5CA0BEE8B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE984C4-6A35-4ABA-9EF7-5C5CA0BEE8B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75F12E56-78B6-4B0A-87A2-BBFD0A34037B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75F12E56-78B6-4B0A-87A2-BBFD0A34037B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75F12E56-78B6-4B0A-87A2-BBFD0A34037B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75F12E56-78B6-4B0A-87A2-BBFD0A34037B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C13A5933-1634-46B1-B8DF-0C56C06A7E40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C13A5933-1634-46B1-B8DF-0C56C06A7E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C13A5933-1634-46B1-B8DF-0C56C06A7E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C13A5933-1634-46B1-B8DF-0C56C06A7E40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{692B1865-05F6-415A-96C9-E0012587F2A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{692B1865-05F6-415A-96C9-E0012587F2A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{692B1865-05F6-415A-96C9-E0012587F2A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{692B1865-05F6-415A-96C9-E0012587F2A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E02C5B3C-6C7D-47F7-B51B-915992229E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E02C5B3C-6C7D-47F7-B51B-915992229E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E02C5B3C-6C7D-47F7-B51B-915992229E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E02C5B3C-6C7D-47F7-B51B-915992229E77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C9A4034-C3CC-4421-AE95-0B9E08B3C9B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9A4034-C3CC-4421-AE95-0B9E08B3C9B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9A4034-C3CC-4421-AE95-0B9E08B3C9B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9A4034-C3CC-4421-AE95-0B9E08B3C9B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C9F393C-5AE6-40D6-BC20-FB4BE5D8D02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C9F393C-5AE6-40D6-BC20-FB4BE5D8D02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C9F393C-5AE6-40D6-BC20-FB4BE5D8D02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C9F393C-5AE6-40D6-BC20-FB4BE5D8D02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E77AD9-EAB0-4AD0-ACFF-11CEB385F412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E77AD9-EAB0-4AD0-ACFF-11CEB385F412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E77AD9-EAB0-4AD0-ACFF-11CEB385F412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E77AD9-EAB0-4AD0-ACFF-11CEB385F412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64544E68-2E34-4A34-B06D-798A67EE4F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64544E68-2E34-4A34-B06D-798A67EE4F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64544E68-2E34-4A34-B06D-798A67EE4F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64544E68-2E34-4A34-B06D-798A67EE4F88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3FC00AA-A9E7-4E6F-9DDC-5E7C1D21E53A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3FC00AA-A9E7-4E6F-9DDC-5E7C1D21E53A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3FC00AA-A9E7-4E6F-9DDC-5E7C1D21E53A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3FC00AA-A9E7-4E6F-9DDC-5E7C1D21E53A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8F28521-413D-4E59-82AD-24C6D2B1DA4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8F28521-413D-4E59-82AD-24C6D2B1DA4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8F28521-413D-4E59-82AD-24C6D2B1DA4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8F28521-413D-4E59-82AD-24C6D2B1DA4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9AD5EE0-9DF2-4548-B7AF-CF7E4605B443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9AD5EE0-9DF2-4548-B7AF-CF7E4605B443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9AD5EE0-9DF2-4548-B7AF-CF7E4605B443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9AD5EE0-9DF2-4548-B7AF-CF7E4605B443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BB096F4-1DB0-4038-BA69-A4F75406D336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BB096F4-1DB0-4038-BA69-A4F75406D336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BB096F4-1DB0-4038-BA69-A4F75406D336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BB096F4-1DB0-4038-BA69-A4F75406D336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6269622-7300-40FA-8740-0619E4D408A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6269622-7300-40FA-8740-0619E4D408A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6269622-7300-40FA-8740-0619E4D408A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6269622-7300-40FA-8740-0619E4D408A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5C79760-C366-4935-B4BC-51D4336630CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5C79760-C366-4935-B4BC-51D4336630CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5C79760-C366-4935-B4BC-51D4336630CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5C79760-C366-4935-B4BC-51D4336630CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FA11EB1-1AA4-4137-9957-CA9DE6D27EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA11EB1-1AA4-4137-9957-CA9DE6D27EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA11EB1-1AA4-4137-9957-CA9DE6D27EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA11EB1-1AA4-4137-9957-CA9DE6D27EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{624EED93-68AA-4422-A6BD-512566205EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{624EED93-68AA-4422-A6BD-512566205EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{624EED93-68AA-4422-A6BD-512566205EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{624EED93-68AA-4422-A6BD-512566205EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54744142-A369-4240-9222-40DABCF622EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54744142-A369-4240-9222-40DABCF622EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54744142-A369-4240-9222-40DABCF622EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54744142-A369-4240-9222-40DABCF622EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D470D522-357A-4BAB-87E4-D7490CEFD42C} = {1949A64A-44F5-4A57-952A-BB9BD86D36A7}
+		{2DD8AAD1-284B-47BA-89D0-58E5E7745C3B} = {1949A64A-44F5-4A57-952A-BB9BD86D36A7}
+		{113C3648-8220-4227-8BC8-8003BFE5022A} = {1949A64A-44F5-4A57-952A-BB9BD86D36A7}
+		{4C515105-7B54-4FD0-996D-C70EDB92D2D0} = {1949A64A-44F5-4A57-952A-BB9BD86D36A7}
+		{81494D39-346F-4BC2-A732-46558F59D9D8} = {1949A64A-44F5-4A57-952A-BB9BD86D36A7}
+		{74FB5712-50CC-45E6-B1CB-1BFA119B7D85} = {1949A64A-44F5-4A57-952A-BB9BD86D36A7}
+		{736460EA-2E22-4E92-BEB7-1B1D4979952C} = {849C81F1-2112-48B5-92C5-3644B821BA03}
+		{40D74183-AAA0-41BB-8DA8-798A37677EF7} = {849C81F1-2112-48B5-92C5-3644B821BA03}
+		{BAF6031F-DF80-4C4C-BA25-E7EC0A8F049E} = {849C81F1-2112-48B5-92C5-3644B821BA03}
+		{377B44D9-918D-4050-8FBF-F6B3C579C087} = {849C81F1-2112-48B5-92C5-3644B821BA03}
+		{D0569297-1B08-4FE4-A2F5-786138FF43E4} = {849C81F1-2112-48B5-92C5-3644B821BA03}
+		{3F8C564A-0093-44B4-8C71-91E45E387891} = {849C81F1-2112-48B5-92C5-3644B821BA03}
+		{90A05EF4-64CC-4C0A-8962-CDC98FC733D2} = {849C81F1-2112-48B5-92C5-3644B821BA03}
+		{82AE6DBB-8294-4586-B3ED-2F9D51601659} = {849C81F1-2112-48B5-92C5-3644B821BA03}
+		{7E5786E7-6314-4F8C-8506-EC9B64FF63F7} = {82AE6DBB-8294-4586-B3ED-2F9D51601659}
+		{7543AC72-9EF2-499B-B1D8-78A2DF5D3F55} = {82AE6DBB-8294-4586-B3ED-2F9D51601659}
+		{827A3A2D-3EFB-4102-A8E5-E886A0CA16E2} = {554171EA-894B-429E-8EF6-F64DD3C9E2F2}
+		{80711D02-8616-4AB0-AB83-FB45A453B5FF} = {79C0EDBC-CF12-4FC1-927A-243B52C3E273}
+		{B09ED0A5-BD38-4AA1-BF39-2F734D5B5EEB} = {79C0EDBC-CF12-4FC1-927A-243B52C3E273}
+		{61DD15B7-19B2-44FC-9955-46C92D7D3E89} = {79C0EDBC-CF12-4FC1-927A-243B52C3E273}
+		{2C7AE785-D630-4C5C-B8CB-A2335D5AE563} = {79C0EDBC-CF12-4FC1-927A-243B52C3E273}
+		{B872C3F1-B22B-4B14-9843-2C6F73A68FE2} = {79C0EDBC-CF12-4FC1-927A-243B52C3E273}
+		{5D4C20A2-6320-4BFC-B009-A42DD7C5473C} = {79C0EDBC-CF12-4FC1-927A-243B52C3E273}
+		{83DB9A87-48EC-4404-B0A2-B48C6B7F5423} = {AA148A84-3755-4B6E-8AC7-35D1F2AFA601}
+		{C32B2C43-743D-4686-BE2D-16D30A1288BE} = {AA148A84-3755-4B6E-8AC7-35D1F2AFA601}
+		{77A19712-C579-409E-8D50-D5444E355477} = {AA148A84-3755-4B6E-8AC7-35D1F2AFA601}
+		{E1B7D401-DB05-4007-B01B-DE6AF528A067} = {AA148A84-3755-4B6E-8AC7-35D1F2AFA601}
+		{5882F3D3-F094-451F-B523-83BAC3128E9F} = {AA148A84-3755-4B6E-8AC7-35D1F2AFA601}
+		{ABF4F007-BB0C-45F2-8C73-38F313961757} = {AA148A84-3755-4B6E-8AC7-35D1F2AFA601}
+		{21AF2F46-FD05-484E-BE0E-7CAB0DE199F7} = {AA148A84-3755-4B6E-8AC7-35D1F2AFA601}
+		{034FB326-5DD2-456D-AFE2-10C2C34AF12C} = {62D064D0-9836-454F-A4F4-1E15355B7336}
+		{C917624F-5ADA-4FA0-9DDA-6C6772757D03} = {62D064D0-9836-454F-A4F4-1E15355B7336}
+		{3EF31E9A-3EE0-4100-94CA-01D4D48C051C} = {62D064D0-9836-454F-A4F4-1E15355B7336}
+		{32ED3339-9D72-4418-B586-F2D2A102EA10} = {948E7909-C8EB-4F03-A74E-64F1CAB90CA5}
+		{FDE984C4-6A35-4ABA-9EF7-5C5CA0BEE8B6} = {803300FF-9E50-4715-A49B-D93BDEE47D34}
+		{75F12E56-78B6-4B0A-87A2-BBFD0A34037B} = {803300FF-9E50-4715-A49B-D93BDEE47D34}
+		{C13A5933-1634-46B1-B8DF-0C56C06A7E40} = {803300FF-9E50-4715-A49B-D93BDEE47D34}
+		{692B1865-05F6-415A-96C9-E0012587F2A6} = {803300FF-9E50-4715-A49B-D93BDEE47D34}
+		{E02C5B3C-6C7D-47F7-B51B-915992229E77} = {803300FF-9E50-4715-A49B-D93BDEE47D34}
+		{8C9A4034-C3CC-4421-AE95-0B9E08B3C9B0} = {803300FF-9E50-4715-A49B-D93BDEE47D34}
+		{1C9F393C-5AE6-40D6-BC20-FB4BE5D8D02A} = {803300FF-9E50-4715-A49B-D93BDEE47D34}
+		{C7E77AD9-EAB0-4AD0-ACFF-11CEB385F412} = {7D7283B0-1CEF-45EB-877A-20CC1BF0EC80}
+		{64544E68-2E34-4A34-B06D-798A67EE4F88} = {7D7283B0-1CEF-45EB-877A-20CC1BF0EC80}
+		{E3FC00AA-A9E7-4E6F-9DDC-5E7C1D21E53A} = {7D7283B0-1CEF-45EB-877A-20CC1BF0EC80}
+		{A8F28521-413D-4E59-82AD-24C6D2B1DA4B} = {7D7283B0-1CEF-45EB-877A-20CC1BF0EC80}
+		{B9AD5EE0-9DF2-4548-B7AF-CF7E4605B443} = {7D7283B0-1CEF-45EB-877A-20CC1BF0EC80}
+		{8BB096F4-1DB0-4038-BA69-A4F75406D336} = {7D7283B0-1CEF-45EB-877A-20CC1BF0EC80}
+		{D6269622-7300-40FA-8740-0619E4D408A9} = {7D7283B0-1CEF-45EB-877A-20CC1BF0EC80}
+		{E5C79760-C366-4935-B4BC-51D4336630CA} = {7D7283B0-1CEF-45EB-877A-20CC1BF0EC80}
+		{6FA11EB1-1AA4-4137-9957-CA9DE6D27EF0} = {7D7283B0-1CEF-45EB-877A-20CC1BF0EC80}
+		{624EED93-68AA-4422-A6BD-512566205EA2} = {49C5A2AA-DBAF-43F2-BE83-136FF3F52A42}
+		{54744142-A369-4240-9222-40DABCF622EF} = {49C5A2AA-DBAF-43F2-BE83-136FF3F52A42}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5742CF41-EA25-44F5-859B-11F221321770}
+	EndGlobalSection
+EndGlobal
